@@ -74,3 +74,18 @@ function kollaÅlder(ålder) {
 return ålder >= 18 ? true : false; 
 
 kollaÅlder(16); */
+
+function hejsan(namn) {
+    return "hejsan " + namn;
+};
+
+hejsan("värld"); // Hejsan värld
+
+const hejsan = (namn) => "Hejsan " + namn;
+
+const ask = (question, yes, no) => (confirm(question)) ? yes() : no();
+
+const ask = (question, yes, no) => {
+    if (confirm(question)) yes();
+    else no();
+}
